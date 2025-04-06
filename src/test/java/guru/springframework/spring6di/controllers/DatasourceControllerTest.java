@@ -5,17 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @ActiveProfiles("uat")
 @SpringBootTest
-class FauxControllerTest {
+class DatasourceControllerTest {
 
     @Autowired
-    private FauxController fauxController;
+    private DatasourceController datasourceController;
 
     @Test
     void getDataSource() {
-        System.out.println(fauxController.getDataSource());
+        System.out.println(datasourceController.getDataSource());
     }
 }

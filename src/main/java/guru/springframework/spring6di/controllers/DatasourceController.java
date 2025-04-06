@@ -4,11 +4,11 @@ import guru.springframework.spring6di.services.datasource.DatasourceService;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class FauxController {
+public class DatasourceController {
 
     private final DatasourceService datasourceService;
 
-    public FauxController(DatasourceService datasourceService) {
+    public DatasourceController(DatasourceService datasourceService) {
         this.datasourceService = datasourceService;
     }
 
